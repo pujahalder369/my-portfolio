@@ -1,0 +1,145 @@
+.h1 {
+  font-size: 44px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4d70ff, #08bfff, #b169fd, #ff3db8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(155, 60, 255, 0.25));
+  display: block;
+}
+
+h3 {
+  background: linear-gradient(135deg, #4d70ff, #08bfff, #b169fd, #ff3db8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(155, 60, 255, 0.25));
+}
+
+.primaryBtn {
+  border-radius: 30px;
+  font-size: larger;
+  padding: 9px 34px;
+  background: linear-gradient(135deg, #4d70ff, #08bfff, #b169fd, #ff3db8);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.tranfarateBtn {
+  border-radius: 30px;
+  font-size: larger;
+  padding: 9px 30px;
+  background: white;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.tranfarateBtn:hover,
+.primaryBtn:hover {
+  border-radius: 6px;
+}
+
+.aboutP p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin-bottom: 16px;
+}
+
+.aboutImg {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.aboutImg::before {
+  content: "";
+  height: 590px;
+  width: 250px;
+  position: absolute;
+  top: 5%;
+  right: 110px;
+  border-radius: 100%;
+  z-index: 10;
+  background: linear-gradient(135deg, #4d70ff, #08bfff, #b169fd, #ff3db8);
+  filter: blur(80px);
+  opacity: 0.6;
+}
+
+.expBox {
+  width: 180px;
+  border: 0.5px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 14px;
+}
+
+.expBox span {
+  font-size: 30px;
+  margin-bottom: 6px;
+  background: linear-gradient(135deg, #4d70ff, #08bfff, #b169fd, #ff3db8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.skillsSwiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+@media (max-width: 1024px) {
+  .h1 {
+    font-size: 34px;
+  }
+
+  .tranfarateBtn,
+  .primaryBtn {
+    padding: 6px 24px;
+    font-size: 16px;
+  }
+
+  .aboutImg::before {
+    right: 70px;
+    height: 318px;
+    width: 119px;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo {
+    font-size: 30px;
+  }
+
+  .aboutP p {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .aboutImg {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .expBox {
+    width: 130px;
+    padding: 8px;
+  }
+  .expBox span {
+    font-size: 22px;
+  }
+
+  .aboutImg::before {
+    top: 10%;
+    right: 50px;
+    height: 250px;
+    width: 100px;
+  }
+}

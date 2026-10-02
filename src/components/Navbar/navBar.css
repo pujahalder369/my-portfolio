@@ -1,0 +1,31 @@
+.logo {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -6px;
+  background: linear-gradient(135deg, #4d70ff, #08bfff, #b169fd, #ff3db8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(155, 60, 255, 0.25));
+}
+
+.navBar {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo {
+    font-size: 30px;
+  }
+}
