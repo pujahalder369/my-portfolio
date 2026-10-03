@@ -8,7 +8,7 @@ const Projects = ({ data }) => {
   return (
     <section
       id="projects"
-      className="w-full container relative z-30 !pt-12 lg:!pt-26"
+      className="w-full container relative z-30 !pt-8 lg:!pt-22"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}

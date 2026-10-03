@@ -65,7 +65,7 @@ const Experience = ({ data }) => {
               <p className="text-lg text-white mt-4">
                 {experience?.experience}
               </p>
-              <p className="text-gray-300 leading-7 mt-5">
+              <p className="text-gray-300 leading-7 mt-4">
                 {experience?.description}
               </p>
 
@@ -74,7 +74,7 @@ const Experience = ({ data }) => {
                 <ul className="space-y-2">
                   {experience?.responsibilities?.map((item, index) => (
                     <li key={index} className="text-gray-300 flex gap-3">
-                      <span className="text-[#08bfff] mt-2">
+                      <span className="text-[#08bfff] mt-[7px]">
                         <SiListmonk size={10} />
                       </span>
                       <span>{item}</span>

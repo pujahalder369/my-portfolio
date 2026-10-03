@@ -39,11 +39,11 @@ const Skills = ({ data }) => {
               const Icon = skill?.icon;
 
               return (
-                <SwiperSlide key={`${skill.name}-${index}`} className="!w-[130px]">
+                <SwiperSlide key={`${skill.name}-${index}`} className="!w-[100px] sm:!w-[130px] mr-0! sm:mr-[10px]!">
                   <div className="flex flex-col items-center justify-center gap-3 text-center">
                     <Icon className="text-4xl sm:text-5xl lg:text-6xl" />
 
-                    <p className="uppercase font-medium whitespace-nowrap">
+                    <p className="uppercase text-[15px] sm:text-[16px] sm:font-medium whitespace-nowrap">
                       {skill?.name}
                     </p>
                   </div>
